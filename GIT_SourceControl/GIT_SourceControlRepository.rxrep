@@ -1,19 +1,114 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 name="GIT_SourceControlRepository"
 id="2e3e21f9-6076-4ba9-956a-26299f17703e"
 rxversion="6.1">
-  <codegen
-  classname="GIT_SourceControlRepository"
-  namespace="GIT_SourceControl"/>
-  <rootfolder
-  name="Root"
-  id="a1ef734e-b2bb-4065-a935-3729dcd97dc4"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+	<codegen
+	classname="GIT_SourceControlRepository"
+	namespace="GIT_SourceControl"/>
+	<rootfolder
+	name="Root"
+	id="a1ef734e-b2bb-4065-a935-3729dcd97dc4"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="FormVipApplication"
+		id="f204f0a8-b814-4220-b9a9-58d54a125dee"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@controlname='formVipApplication']"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="FirstName"
+			id="49168073-371c-4d78-b0df-1a51c83db58d"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@controlname='formVipApplication']/text[@controlname='tbFirstName']/text[@accessiblename='First Name:']"
+			addcaps="text,accessible"
+			refimgid="d364504e-291e-447b-b2c9-e61b1b3fd197">
+				/form[@controlname='formVipApplication']/?/?/text[@accessiblename='First Name:']
+			</item>
+			<item
+			name="LastName"
+			id="9df44a01-76e2-4b94-8158-78f0643c62a9"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@controlname='formVipApplication']/text[@controlname='tbLastName']/text[@accessiblename='Last Name:']"
+			addcaps="text,accessible"
+			refimgid="57cea665-0b79-41b8-9cf4-61872b423dba">
+				/form[@controlname='formVipApplication']/?/?/text[@accessiblename='Last Name:']
+			</item>
+			<item
+			name="Movie"
+			id="08c5bdd3-e9d2-4472-be9f-4b643c7e8d43"
+			searchtimeout="30000ms"
+			capname="listitem"
+			refpath="/form[@controlname='formVipApplication']/list/list/listitem[@accessiblename='Movie']"
+			addcaps="listitem,accessible"
+			refimgid="8f908bd9-066b-4d25-9def-fc18d1ae3520">
+				/form[@controlname='formVipApplication']/list[@controlname='lbCategory']/?/?/listitem[@accessiblename='Movie']
+			</item>
+			<item
+			name="RbMale"
+			id="22671d8e-cc18-434f-8b00-123abc8e45c1"
+			searchtimeout="30000ms"
+			capname="radiobutton"
+			refpath="/form[@controlname='formVipApplication']/container/radiobutton[@controlname='rbMale']"
+			addcaps="radiobutton,control,nativewindow"
+			refimgid="a7136292-c02e-4ba5-aa18-8532db474d0a">
+				/form[@controlname='formVipApplication']/?/?/radiobutton[@controlname='rbMale']
+			</item>
+			<item
+			name="BtAdd"
+			id="56d75254-c54a-4d5f-b5c0-fbc1a197e748"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='formVipApplication']/button[@controlname='btAdd']"
+			addcaps="button,control,nativewindow"
+			refimgid="2807e594-291b-448b-87c3-203c1a81a074">
+				/form[@controlname='formVipApplication']/button[@controlname='btAdd']
+			</item>
+			<item
+			name="FirstNameRow0"
+			id="638030bb-7c91-469b-bc5b-3c2c34e36b13"
+			searchtimeout="30000ms"
+			capname="cell"
+			refpath="/form[@controlname='formVipApplication']/table[@controlname='dataGridView1']/row[@accessiblename='Row 0']/cell[@accessiblename='First Name Row 0']"
+			addcaps="cell,accessible"
+			refimgid="98e599fe-bcbc-4a65-9996-fd72297a8970">
+				/form[@controlname='formVipApplication']/table[@controlname='dataGridView1']/?/?/cell[@accessiblename='First Name Row 0']
+			</item>
+			<item
+			name="VIPCount1"
+			id="b8ca2e50-19e7-4f7c-b42b-e7f2b778ccb6"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@controlname='formVipApplication']/statusbar[@controlname='statusStrip1']/text[@accessiblename='VIP count: 1']"
+			addcaps="text,accessible"
+			refimgid="4de08a04-4632-4002-b04b-ffb1a2ae614b">
+				/form[@controlname='formVipApplication']/?/?/text[@accessiblename='VIP count: 1']
+			</item>
+			<basepath>
+				/form[@controlname='formVipApplication']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

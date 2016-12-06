@@ -79,6 +79,46 @@ namespace GIT_SourceControl
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Users\\jbranham.RANOREX\\Desktop\\Training Samples\\VipV1.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication("C:\\Users\\jbranham.RANOREX\\Desktop\\Training Samples\\VipV1.exe", "", "C:\\Users\\jbranham.RANOREX\\Desktop\\Training Samples", false);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormVipApplication.FirstName' at 22;4.", repo.FormVipApplication.FirstNameInfo, new RecordItemIndex(1));
+            repo.FormVipApplication.FirstName.Click("22;4");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}J{LShiftKey up}ay' with focus on 'FormVipApplication.FirstName'.", repo.FormVipApplication.FirstNameInfo, new RecordItemIndex(2));
+            repo.FormVipApplication.FirstName.PressKeys("{LShiftKey down}J{LShiftKey up}ay");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormVipApplication.LastName' at 18;4.", repo.FormVipApplication.LastNameInfo, new RecordItemIndex(3));
+            repo.FormVipApplication.LastName.Click("18;4");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}B{LShiftKey up}ranham' with focus on 'FormVipApplication.LastName'.", repo.FormVipApplication.LastNameInfo, new RecordItemIndex(4));
+            repo.FormVipApplication.LastName.PressKeys("{LShiftKey down}B{LShiftKey up}ranham");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormVipApplication.Movie' at 19;8.", repo.FormVipApplication.MovieInfo, new RecordItemIndex(5));
+            repo.FormVipApplication.Movie.Click("19;8");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormVipApplication.RbMale' at 6;8.", repo.FormVipApplication.RbMaleInfo, new RecordItemIndex(6));
+            repo.FormVipApplication.RbMale.Click("6;8");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormVipApplication.BtAdd' at 30;12.", repo.FormVipApplication.BtAddInfo, new RecordItemIndex(7));
+            repo.FormVipApplication.BtAdd.Click("30;12");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Jay') on item 'FormVipApplication.FirstNameRow0'.", repo.FormVipApplication.FirstNameRow0Info, new RecordItemIndex(8));
+            Validate.Attribute(repo.FormVipApplication.FirstNameRow0Info, "Text", "Jay");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='VIP count: 1') on item 'FormVipApplication.VIPCount1'.", repo.FormVipApplication.VIPCount1Info, new RecordItemIndex(9));
+            Validate.Attribute(repo.FormVipApplication.VIPCount1Info, "Text", "VIP count: 1");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

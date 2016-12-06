@@ -27,6 +27,7 @@ namespace GIT_SourceControl
     public partial class GIT_SourceControlRepository : RepoGenBaseFolder
     {
         static GIT_SourceControlRepository instance = new GIT_SourceControlRepository();
+        GIT_SourceControlRepositoryFolders.FormVipApplicationAppFolder _formvipapplication;
 
         /// <summary>
         /// Gets the singleton class instance representing the GIT_SourceControlRepository element repository.
@@ -43,6 +44,7 @@ namespace GIT_SourceControl
         public GIT_SourceControlRepository() 
             : base("GIT_SourceControlRepository", "/", null, 0, false, "a1ef734e-b2bb-4065-a935-3729dcd97dc4", ".\\RepositoryImages\\GIT_SourceControlRepositorya1ef734e.rximgres")
         {
+            _formvipapplication = new GIT_SourceControlRepositoryFolders.FormVipApplicationAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace GIT_SourceControl
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The FormVipApplication folder.
+        /// </summary>
+        [RepositoryFolder("f204f0a8-b814-4220-b9a9-58d54a125dee")]
+        public virtual GIT_SourceControlRepositoryFolders.FormVipApplicationAppFolder FormVipApplication
+        {
+            get { return _formvipapplication; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,228 @@ namespace GIT_SourceControl
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.1")]
     public partial class GIT_SourceControlRepositoryFolders
     {
+        /// <summary>
+        /// The FormVipApplicationAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("f204f0a8-b814-4220-b9a9-58d54a125dee")]
+        public partial class FormVipApplicationAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _firstnameInfo;
+            RepoItemInfo _lastnameInfo;
+            RepoItemInfo _movieInfo;
+            RepoItemInfo _rbmaleInfo;
+            RepoItemInfo _btaddInfo;
+            RepoItemInfo _firstnamerow0Info;
+            RepoItemInfo _vipcount1Info;
+
+            /// <summary>
+            /// Creates a new FormVipApplication  folder.
+            /// </summary>
+            public FormVipApplicationAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormVipApplication", "/form[@controlname='formVipApplication']", parentFolder, 30000, null, true, "f204f0a8-b814-4220-b9a9-58d54a125dee", "")
+            {
+                _firstnameInfo = new RepoItemInfo(this, "FirstName", "?/?/text[@accessiblename='First Name:']", 30000, null, "49168073-371c-4d78-b0df-1a51c83db58d");
+                _lastnameInfo = new RepoItemInfo(this, "LastName", "?/?/text[@accessiblename='Last Name:']", 30000, null, "9df44a01-76e2-4b94-8158-78f0643c62a9");
+                _movieInfo = new RepoItemInfo(this, "Movie", "list[@controlname='lbCategory']/?/?/listitem[@accessiblename='Movie']", 30000, null, "08c5bdd3-e9d2-4472-be9f-4b643c7e8d43");
+                _rbmaleInfo = new RepoItemInfo(this, "RbMale", "?/?/radiobutton[@controlname='rbMale']", 30000, null, "22671d8e-cc18-434f-8b00-123abc8e45c1");
+                _btaddInfo = new RepoItemInfo(this, "BtAdd", "button[@controlname='btAdd']", 30000, null, "56d75254-c54a-4d5f-b5c0-fbc1a197e748");
+                _firstnamerow0Info = new RepoItemInfo(this, "FirstNameRow0", "table[@controlname='dataGridView1']/?/?/cell[@accessiblename='First Name Row 0']", 30000, null, "638030bb-7c91-469b-bc5b-3c2c34e36b13");
+                _vipcount1Info = new RepoItemInfo(this, "VIPCount1", "?/?/text[@accessiblename='VIP count: 1']", 30000, null, "b8ca2e50-19e7-4f7c-b42b-e7f2b778ccb6");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f204f0a8-b814-4220-b9a9-58d54a125dee")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f204f0a8-b814-4220-b9a9-58d54a125dee")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirstName item.
+            /// </summary>
+            [RepositoryItem("49168073-371c-4d78-b0df-1a51c83db58d")]
+            public virtual Ranorex.Text FirstName
+            {
+                get
+                {
+                    return _firstnameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstName item info.
+            /// </summary>
+            [RepositoryItemInfo("49168073-371c-4d78-b0df-1a51c83db58d")]
+            public virtual RepoItemInfo FirstNameInfo
+            {
+                get
+                {
+                    return _firstnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LastName item.
+            /// </summary>
+            [RepositoryItem("9df44a01-76e2-4b94-8158-78f0643c62a9")]
+            public virtual Ranorex.Text LastName
+            {
+                get
+                {
+                    return _lastnameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LastName item info.
+            /// </summary>
+            [RepositoryItemInfo("9df44a01-76e2-4b94-8158-78f0643c62a9")]
+            public virtual RepoItemInfo LastNameInfo
+            {
+                get
+                {
+                    return _lastnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Movie item.
+            /// </summary>
+            [RepositoryItem("08c5bdd3-e9d2-4472-be9f-4b643c7e8d43")]
+            public virtual Ranorex.ListItem Movie
+            {
+                get
+                {
+                    return _movieInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Movie item info.
+            /// </summary>
+            [RepositoryItemInfo("08c5bdd3-e9d2-4472-be9f-4b643c7e8d43")]
+            public virtual RepoItemInfo MovieInfo
+            {
+                get
+                {
+                    return _movieInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RbMale item.
+            /// </summary>
+            [RepositoryItem("22671d8e-cc18-434f-8b00-123abc8e45c1")]
+            public virtual Ranorex.RadioButton RbMale
+            {
+                get
+                {
+                    return _rbmaleInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RbMale item info.
+            /// </summary>
+            [RepositoryItemInfo("22671d8e-cc18-434f-8b00-123abc8e45c1")]
+            public virtual RepoItemInfo RbMaleInfo
+            {
+                get
+                {
+                    return _rbmaleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtAdd item.
+            /// </summary>
+            [RepositoryItem("56d75254-c54a-4d5f-b5c0-fbc1a197e748")]
+            public virtual Ranorex.Button BtAdd
+            {
+                get
+                {
+                    return _btaddInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtAdd item info.
+            /// </summary>
+            [RepositoryItemInfo("56d75254-c54a-4d5f-b5c0-fbc1a197e748")]
+            public virtual RepoItemInfo BtAddInfo
+            {
+                get
+                {
+                    return _btaddInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirstNameRow0 item.
+            /// </summary>
+            [RepositoryItem("638030bb-7c91-469b-bc5b-3c2c34e36b13")]
+            public virtual Ranorex.Cell FirstNameRow0
+            {
+                get
+                {
+                    return _firstnamerow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstNameRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("638030bb-7c91-469b-bc5b-3c2c34e36b13")]
+            public virtual RepoItemInfo FirstNameRow0Info
+            {
+                get
+                {
+                    return _firstnamerow0Info;
+                }
+            }
+
+            /// <summary>
+            /// The VIPCount1 item.
+            /// </summary>
+            [RepositoryItem("b8ca2e50-19e7-4f7c-b42b-e7f2b778ccb6")]
+            public virtual Ranorex.Text VIPCount1
+            {
+                get
+                {
+                    return _vipcount1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VIPCount1 item info.
+            /// </summary>
+            [RepositoryItemInfo("b8ca2e50-19e7-4f7c-b42b-e7f2b778ccb6")]
+            public virtual RepoItemInfo VIPCount1Info
+            {
+                get
+                {
+                    return _vipcount1Info;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
