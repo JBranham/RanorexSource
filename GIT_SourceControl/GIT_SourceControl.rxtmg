@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="GIT_SourceControl"
+      id="8ded63fb-8570-4a71-8477-41246828d510"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="GIT_SourceControl"
+      id="8ded63fb-8570-4a71-8477-41246828d510"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

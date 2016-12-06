@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.1"
+id="d0d949ab-50cf-46f8-9ead-ebe422070254"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="GIT_SourceControl"/>
+	<variables/>
+	<recorditems/>
+	<repository
+	name="GIT_SourceControlRepository"
+	id="2e3e21f9-6076-4ba9-956a-26299f17703e"
+	rxversion="6.1"
+	relativepath="GIT_SourceControlRepository.rxrep">
+		<codegen
+		classname="GIT_SourceControlRepository"
+		namespace="GIT_SourceControl"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="a1ef734e-b2bb-4065-a935-3729dcd97dc4"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

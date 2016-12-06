@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="GIT_SourceControlRepository"
+id="2e3e21f9-6076-4ba9-956a-26299f17703e"
+rxversion="6.1">
+  <codegen
+  classname="GIT_SourceControlRepository"
+  namespace="GIT_SourceControl"/>
+  <rootfolder
+  name="Root"
+  id="a1ef734e-b2bb-4065-a935-3729dcd97dc4"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
